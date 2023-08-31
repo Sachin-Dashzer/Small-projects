@@ -1,0 +1,141 @@
+
+#project{
+    font-size: 16px;
+    min-height: 60vh;
+}
+
+.project-box{
+    width: 100%;
+    margin: 5rem 0;
+    min-height: 40vh;
+    position: relative;
+}
+
+.project-container{
+    width: 50vw;
+    height: 62vh;
+    border-radius: 2em;
+
+    margin: 0 auto;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+
+    
+}
+
+.project-data{
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--secondary);
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1.2em;
+    transition: var(--transition);
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+#next , #prev{
+    background-color: red;
+    margin: 1em;
+    transform: translateX(50%);
+    transform: scale(3.6);
+    background: rgba(255, 250, 250, 0.277);
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 4px;
+    
+}
+
+#next{
+    position: absolute;
+    top: 11.5em;
+    right: 9em;
+}
+
+#prev{
+    position: absolute;
+    top: 11.5em;
+    left : 9em;
+}
+
+.project-text{
+    padding: 4em 1em;
+    margin-right: 1em;
+    width: 40em;
+}
+
+.project-text h3{
+    font-size: 1.6em;
+    border-bottom: 1px solid white;
+    
+}
+.project-text p{
+    margin: 1.5em 0;
+    font-size: 0.9em;
+    color: var(--accent);
+    word-spacing: 0.1em;
+}
+.project-text a{
+    color: var(--accent);
+    font-size: 1.2em;
+    margin-bottom: 1em;
+
+}
+
+
+.project-img{
+    width: 50em;
+    height: 25em;
+    border-radius: 2em;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media (max-width : 1024px) {
+    
+
+    .project-container{
+
+        width: 35em;
+    }
+    .project-data{
+        flex-wrap: wrap;
+        
+    }
+    .project-text{
+        padding: 1em 1em;
+    }
+    .project-img{
+        padding: 1em;
+        border-radius: 2em;
+        overflow: hidden;
+    }
+}
+
+
+
+
+@media (max-width : 600px) {
+
+    #project{
+        font-size: 12px;
+    }
+    .project-container{
+        width: 27em;
+    }
+
+}

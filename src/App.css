@@ -1,0 +1,151 @@
+
+ 
+
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: var(--font-family);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+body{
+  width: 100%;
+  background: var(--background);
+  color: var(--text);
+  /* line-height: 1.7rem; */
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+a{
+  color: unset;
+  text-decoration: none;
+  color: var(--text);
+  cursor: pointer;
+  /* transition: var(--transition); */
+}
+
+
+/* //////////////// simple styles /////// */
+
+
+h1,h2,h3,h4,h5{
+  font-weight: 500;
+}
+
+h1{
+  font-size: 3.4em;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+section{
+
+  padding: 6rem 8rem 0rem 12rem ;
+
+
+}
+
+section>h2 , section>h5{
+  font-size: 1rem;
+  text-align: left;
+  text-transform: capitalize;
+  color : var(--accent);
+}
+
+
+
+section>h2{
+  font-size: 2.5rem;
+  color: var(--text);
+  position: relative;
+}
+
+section>h2::after{
+  content: "";
+  width: 70%;
+  height: 2px;
+  background-color: var(--text);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+}
+
+
+.btn{
+
+  width: fit-content;
+  color: var(--primary);
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid var(--primary);
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.2rem ;
+  transition: var(--transition);
+
+}
+
+.btn:hover{
+  color: var(--secondary);
+  background-color: var(--text);
+  border-color: transparent;
+}
+/* 
+img{
+  width: 100%;
+  object-fit: cover; */
+/* }  */
+
+
+
+/* ///////////// media query for medium ///////////// */
+
+@media (max-width: 1024px) {
+
+  
+    .container{
+      width: var(--container-width-md);
+    }
+    section{
+      padding: 0 6rem;
+      padding-left: 8rem;
+
+      padding-top: 4rem;
+
+    }
+}
+
+
+/* ///////////// media query for small ///////////// */
+
+@media (max-width: 600px) {
+    
+    .container{
+      width: var(--container-width-sm);
+    }
+    section{
+      padding: 0 2rem;
+      padding-bottom: 2rem;
+      
+    }
+
+    section>h2{
+      font-size: 2rem;
+    }
+    section>h5{
+      font-size: 0.9rem;
+    }
+    
+}

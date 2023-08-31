@@ -1,0 +1,173 @@
+#footer {
+  min-height: 60vh;
+  font-size: 16px;
+  position: relative;
+}
+
+.contact-box {
+  width: 94%;
+  margin: 2em auto;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+.form-box {
+  width: 33em;
+  padding-bottom: 2em;
+  overflow: hidden;
+}
+
+.form-box input {
+  display: block;
+  width: 22em;
+  height: 2em;
+  margin: 1em 0;
+  background-color: transparent;
+  border-bottom: 2px solid var(--primary);
+  color: var(--text);
+  padding-left: 0.5em;
+
+  text-transform: capitalize;
+  font-size: 1.2em;
+}
+.form-box textarea {
+  display: block;
+  width: 22em;
+  min-height: 2em;
+  margin: 1.2em 0;
+  padding-left: 0.5em;
+  background-color: transparent;
+  border-bottom: 2px solid var(--primary);
+  border-left: 2px solid var(--primary);
+  color: var(--text);
+
+  text-transform: capitalize;
+  font-size: 1.2em;
+}
+
+.form-box div{
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  color: var(--text);
+  margin-top: 1.8em;
+  
+ 
+}
+
+.form-box div h5{
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.form-box div span{
+  font-size: 0.8em;
+
+  color: var(--text);
+  margin-left: 0.5em;
+}
+
+
+
+
+
+.detail-box {
+  width: 35em;
+  padding-top: 2em;
+  padding-left: 2em;
+  overflow: hidden;
+}
+
+.detail-box iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.6em;
+}
+
+.form-box div .btn {
+  width: 6em;
+  border: 1.6px solid var(--primary);
+  padding-bottom: 2.1em;
+  padding-left: 0.8em;
+  margin: 0em;
+  
+}
+
+
+
+
+.scroller-bottom{
+  position: absolute;
+  right: 0;
+  bottom : 10em;
+  transform: rotate(90deg);
+
+}
+
+.scroller-bottom a{
+  font-size: 1em;
+  letter-spacing: 0.4em;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.scroller-bottom a:after{
+  content: '';
+  width: 0.8px;
+  height: 5em;
+  position: absolute;
+  
+  top: -125%;
+  left: -50%;
+  background: var(--text);
+  
+  transform: rotate(90deg);
+
+}
+
+
+
+
+
+
+
+@media (max-width : 1024px) {
+    .detail-box{
+        width: 100%;
+        padding: 0;
+        height: 40vh;
+        margin-top: 2em;
+
+    }
+    .contact-box{
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width : 600px) {
+
+    #footer{
+        font-size: 12px;
+    }
+
+    .scroller-bottom{
+      display: none;
+    }
+
+    .form-box div{
+      display: block;
+      
+    }
+    .form-box div h5{
+      margin-top: 1em;
+    }
+
+}

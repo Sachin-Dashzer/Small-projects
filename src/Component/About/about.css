@@ -1,0 +1,180 @@
+
+
+#about{
+
+    font-size: 16px;
+    min-height: 60vh;
+    padding-top: 2em;
+
+}
+
+.about-content{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1em 2em;
+
+}
+
+.about-img{
+    width: 22em;
+    height: 25em;
+    overflow: hidden;
+    /* padding: 2em; */
+    background-color: var(--accent);
+    margin-top: 5em;
+
+    border: 2em solid var(--secondary);
+
+}
+
+.about-img img{
+    width: 150%;
+    height: 250%; 
+    object-fit: cover;
+    padding-right: 5em;
+
+    transform: rotate(10deg);
+
+    /* opacity: 0.6;
+    transform: scale(0.9);
+    transition: var(--transition); */
+}  
+ 
+/* .about-img img:hover{
+    opacity: 1;
+    transform: scale(1);
+    
+} */
+
+.about-text{
+    width: 40em;
+}
+
+.about-text-container{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin: 1em 0;
+    
+}
+.about-text-container div{
+
+    width: 10em;
+    height: 10em;
+    border-radius: 5% ;
+    text-align: center;
+    padding-bottom: 1.6em;
+    background: var(--secondary);
+    color: var(--accent);
+
+
+}
+
+
+
+
+.about-text-container div h4{
+ 
+    font-size: 1.4em;
+
+}
+
+.about-text-container div h3{
+
+    font-size: 2.0em;
+    margin: 0.6em 0;
+    margin-bottom: 0.4em;
+    color: var(--text);
+
+}
+.about-text-container div p{
+
+    font-size: 0.8em;
+    margin-top: 0.4em;
+}
+
+.about-text a{
+    margin: 1.5em 0;
+    background: var(--primary);
+    color: var(--background);
+    font-weight: bolder;
+}
+
+.about-text a:hover{
+
+    background: var(--secondary);
+    color: var(--text);
+    border-color: 2px solid var(--secondary);
+
+}
+
+.about-text p{
+    font-size: 1em;
+    line-height: 1.7em;
+    word-spacing: 0.2em;
+}
+
+.about-text h6{
+    margin-top: 2em;
+    color: var(--accent);
+    font-weight: bolder;
+    font-size: 1.9rem;
+    margin-bottom: 0.5em;
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+    #about{
+        font-size: 16px;
+        padding-top: 0;
+    }
+
+    .about-text{
+        width: 20em;
+    }
+
+    .about-content{
+        padding: 0 2em;
+        padding-top: 2rem;
+    }
+    .about-text{
+        width: 100%;
+        margin: 0;
+    }
+    .about-text-container{
+        gap: 3em;
+    }
+  
+}
+
+
+
+
+
+@media (max-width: 600px) {
+
+    #about{
+        font-size: 12px;
+    }
+
+    .about-text-container{
+        gap: 0em;
+        margin-bottom: 0;
+    }
+
+    .about-text h6{
+        margin-top: 1em;
+    }
+
+    .about-text-container div{
+        transform: scale(0.8);
+    }
+  
+}
