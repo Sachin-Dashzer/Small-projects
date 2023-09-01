@@ -7,5 +7,3 @@ export {default as Header} from './Header/Header.jsx'
 export {default as Projects} from './Projects/Project.jsx'
 export {default as Navbar} from "./Navbar/Navbar.jsx"
 export {default as About} from "./About/About.jsx"
-export {default as Ending} from "./Ending/Ending.jsx"
-export {default as Top} from './Top/Top.jsx'

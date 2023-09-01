@@ -15,10 +15,10 @@ const Skills = () => {
       <h2>My Qualities</h2>
      
 
-      <div className="skills-section">
+      <div className="qualities-box">
 
 
-        <div className="my-skills">
+        <div className="qualities-skills">
           <h3>Skills section</h3>
           
           <Language  data = "HTML5" level={90} />
@@ -33,12 +33,12 @@ const Skills = () => {
 
 
 
-        <div className="my-services">
+        <div className="qualities-services">
             <h3>Services section</h3>
 
              <details>
               <summary><h3>Frontend webdevelopment</h3> <RiArrowDropDownLine style={{fontSize : "2rem"}} /> </summary>
-              <p>I build responsive websites using HTML5, CSS3, Javascript, React.js, Vite.js, Jquery, and GSAP. I also use SASS and Bootstrap for styling.</p>
+              <p>I build responsive websites using HTML5, CSS3, Javascript, React.js, Vite.js, Jquery, and GSAP. I also use SCSS and Vanilla CSS for styling.</p>
              </details>
 
 

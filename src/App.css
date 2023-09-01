@@ -48,6 +48,7 @@ h1{
   font-size: 3.4em;
   font-weight: bold;
   text-transform: capitalize;
+  
 }
 
 section{
@@ -70,6 +71,9 @@ section>h2{
   font-size: 2.5rem;
   color: var(--text);
   position: relative;
+  margin-top: 0.4rem;
+  font-family: 'Sedgwick Ave Display', cursive;
+
 }
 
 section>h2::after{

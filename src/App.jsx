@@ -1,7 +1,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Top , Navbar , Header , Footer, Skills, Projects , About , Ending} from "./Component";
+import {Navbar , Header , Footer, Skills, Projects , About } from "./Component/Index.js";
 
 
 import "./App.css"
@@ -16,9 +16,8 @@ function App() {
   return (
     <>
 
-      <div>
+      <main>
 
-        <Top />
 
         <Navbar />
 
@@ -32,9 +31,8 @@ function App() {
 
         <Footer />  
         
-        <Ending />
 
-      </div>
+      </main>
 
     </>
   )

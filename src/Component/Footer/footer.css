@@ -15,13 +15,13 @@
 
 
 
-.form-box {
+.contact-box-form {
   width: 33em;
   padding-bottom: 2em;
   overflow: hidden;
 }
 
-.form-box input {
+.contact-box-form input {
   display: block;
   width: 22em;
   height: 2em;
@@ -34,7 +34,7 @@
   text-transform: capitalize;
   font-size: 1.2em;
 }
-.form-box textarea {
+.contact-box-form textarea {
   display: block;
   width: 22em;
   min-height: 2em;
@@ -49,7 +49,7 @@
   font-size: 1.2em;
 }
 
-.form-box div{
+.contact-box-form div{
   height: fit-content;
 
   display: flex;
@@ -61,12 +61,12 @@
  
 }
 
-.form-box div h5{
+.contact-box-form div h5{
   font-size: 1.2em;
   line-height: 1.6;
 }
 
-.form-box div span{
+.contact-box-form div span{
   font-size: 0.8em;
 
   color: var(--text);
@@ -77,20 +77,20 @@
 
 
 
-.detail-box {
+.contact-box-map {
   width: 35em;
-  padding-top: 2em;
+  padding-top: 1em;
   padding-left: 2em;
   overflow: hidden;
 }
 
-.detail-box iframe {
+.contact-box-map iframe {
   width: 100%;
   height: 100%;
   border-radius: 0.6em;
 }
 
-.form-box div .btn {
+.contact-box-form div .btn {
   width: 6em;
   border: 1.6px solid var(--primary);
   padding-bottom: 2.1em;
@@ -102,7 +102,7 @@
 
 
 
-.scroller-bottom{
+.footer-scroller{
   position: absolute;
   right: 0;
   bottom : 10em;
@@ -110,14 +110,14 @@
 
 }
 
-.scroller-bottom a{
+.footer-scroller a{
   font-size: 1em;
   letter-spacing: 0.4em;
   text-transform: capitalize;
   position: relative;
 }
 
-.scroller-bottom a:after{
+.footer-scroller a:after{
   content: '';
   width: 0.8px;
   height: 5em;
@@ -138,7 +138,7 @@
 
 
 @media (max-width : 1024px) {
-    .detail-box{
+    .contact-box-map{
         width: 100%;
         padding: 0;
         height: 40vh;
@@ -158,15 +158,15 @@
         font-size: 12px;
     }
 
-    .scroller-bottom{
+    .footer-scroller{
       display: none;
     }
 
-    .form-box div{
+    .contact-box-form div{
       display: block;
       
     }
-    .form-box div h5{
+    .contact-box-form div h5{
       margin-top: 1em;
     }
 

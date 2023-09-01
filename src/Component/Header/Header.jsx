@@ -6,6 +6,8 @@ import Me from "../../Images/myimage.png";
 
 import CV from "../../Images/sachin.pdf";
 
+import Top from './Top/Top.jsx';
+
 
 
 
@@ -15,9 +17,14 @@ import CV from "../../Images/sachin.pdf";
 
 const Header = () => {
   return (
+
+    <>
+
+    <Top />
+
     <section id="header">
       <div className="header-box">
-        <div className="header-text">
+        <div className="header-box-text">
           <h1>
             <span style={{ color: "var(--text)" }}>Hii</span> , I'm
           </h1>
@@ -38,14 +45,16 @@ const Header = () => {
           
         </div>
 
-        <div className="header-image">
+        <div className="header-box-img">
           <img src={Me} alt="" />
         </div>
       </div>
-      <div className="scroller">
+      <div className="header-scroller">
         <a href="#Ending">scroll down</a>
       </div>
     </section>
+
+    </>
   );
 };
 

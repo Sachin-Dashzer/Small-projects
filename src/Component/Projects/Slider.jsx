@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { GrNext } from "react-icons/gr";
 import { GrPrevious } from "react-icons/gr";
 import { useState } from "react";
@@ -17,7 +17,7 @@ const Slider = ({ content }) => {
       prevIndex === content.length - 1 ? 0 : prevIndex + 1
     );
   };
-
+ 
   return (
     <div className="project-box">
       <div className="project-box-container">{content[currentindex]};</div>

@@ -4,7 +4,7 @@
 }
 
 
-.skills-section {
+.qualities-box {
   margin: 3em 2em;
   margin-top: 4em;
 
@@ -13,7 +13,7 @@
   flex-wrap: wrap;
 }
 
-.skills-section > div {
+.qualities-box > div {
   width: 35vw;
   min-height: 30vh;
   background-color: var(--secondary);
@@ -23,7 +23,7 @@
   transform: scale(0.95);
 }
 
-.skills-section > div:hover{
+.qualities-box > div:hover{
 
   border: 1px solid var(--primary);
   transform: scale(1.01);
@@ -33,14 +33,14 @@
 
 
 
-.skills-section > div > h3 {
+.qualities-box > div > h3 {
   font-size: 1.6em;
   color: var(--accent);
   margin-bottom: 1em;
   position: relative;
 }
 
-.skills-section > div > h3::after {
+.qualities-box > div > h3::after {
   content: "";
   width: 85%;
   height: 1px;
@@ -53,14 +53,14 @@
     transition: transform 0.4s ease-in-out; */
 }
 /* 
-.skills-section>div>h3:hover::after{
+.qualities-box>div>h3:hover::after{
 
     transform: scaleX(1);
     transform-origin: bottom left;
 
 } */
 
-.skills {
+.languages {
   width: 20em;
   /* background-color: var(--secondary); */
   margin: 1em 1em;
@@ -70,13 +70,13 @@
   border-bottom: 1px solid var(--accent);
 }
 
-.skills h3 {
+.languages h3 {
   text-transform: uppercase;
 }
 
 
 
-.my-services details {
+.qualities-services details {
   width: 80%;
   margin: 0.5em 1em;
   margin-bottom: 1.5em;
@@ -85,19 +85,19 @@
   border-bottom: 1px solid var(--primary);
 }
 
-.my-services details summary {
+.qualities-services details summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.my-services details h3 {
+.qualities-services details h3 {
   font-size: 1.2em;
   text-transform: capitalize;
 
 }
 
-.my-services details p {
+.qualities-services details p {
   margin: 1em 0;
   color: var(--primary);
 }
@@ -106,20 +106,20 @@
 
 @media (max-width : 1024px) {
 
-    .skills-section{
+    .qualities-box{
       margin: 0;
     }
-    .skills{
+    .languages{
       margin: 1em 2em;
     }
-    .skills-section>div{
+    .qualities-box>div{
       width: fit-content;
       margin-top: 3em;
       margin-left: 2em;
     }
     
    
-    .my-services details{
+    .qualities-services details{
       width: 90%;
     }
 }
@@ -133,7 +133,7 @@
     margin: 4em 0;
   }
  
-  .skills-section>div{
+  .qualities-box>div{
     margin-left: 0;
   }
 

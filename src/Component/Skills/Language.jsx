@@ -7,7 +7,7 @@ import React from 'react'
 
 const Language = (promps) => {
   return (
-    <div className='skills'>
+    <div className='languages'>
 
         <h3>{promps.data}</h3>
 
