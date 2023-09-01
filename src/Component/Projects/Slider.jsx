@@ -20,7 +20,7 @@ const Slider = ({ content }) => {
 
   return (
     <div className="project-box">
-      <div className="project-container">{content[currentindex]};</div>
+      <div className="project-box-container">{content[currentindex]};</div>
 
       <GrPrevious id="prev" onClick={prevdev} />
       <GrNext id="next" onClick={nextdev} />

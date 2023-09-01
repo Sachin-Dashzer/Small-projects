@@ -12,11 +12,11 @@ const About = () => {
       <h5>Get to know</h5>
       <h2>About me</h2>
       
-      <div className="about-content">
-        <div className="about-img">
+      <div className="about-box">
+        <div className="about-box-img">
           <img src={Mineimg} alt="" />
         </div>
-        <div className="about-text">
+        <div className="about-box-text">
           
           <h6 style={{ fontSize: "1.5rem" }}>Hey there!</h6>
           <p>
@@ -31,7 +31,7 @@ const About = () => {
 
           <a href="#footer" className="btn">Let's talk</a>
 
-          <div className="about-text-container">
+          <div className="about-box-text-container">
             <div>
               <h3>
                 <PiCertificateFill />

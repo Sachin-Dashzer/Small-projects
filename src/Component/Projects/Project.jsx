@@ -9,8 +9,8 @@ const Project = () => {
 
   
   const sliderarr = [
-    <div className="project-data" style={{background : "pink"}}>
-      <div className="project-text">
+    <div className="project-webpage" style={{background : "pink"}}>
+      <div className="project-webpage-data">
         <h3>A website</h3>
         <p>
           Explore our exquisite online woodcraft store, where artistry meets
@@ -27,12 +27,12 @@ const Project = () => {
           }}
         />
       </div>
-      <div className="project-img">
+      <div className="project-webpage-img">
         <img src="https://source.unsplash.com/random" alt="" />
       </div>
     </div>,
-    <div className="project-data" style={{background : "salmon"}}>
-      <div className="project-text">
+    <div className="project-webpage" style={{background : "salmon"}}>
+      <div className="project-webpage-data">
         <h3> B website</h3>
         <p>
           Explore our exquisite online woodcraft store, where artistry meets
@@ -49,12 +49,12 @@ const Project = () => {
           }}
         />
       </div>
-      <div className="project-img">
+      <div className="project-webpage-img">
         <img src="https://source.unsplash.com/random" alt="" />
       </div>
     </div>,
-    <div className="project-data">
-      <div className="project-text">
+    <div className="project-webpage">
+      <div className="project-webpage-data">
         <h3>C website</h3>
         <p>
           Explore our exquisite online woodcraft store, where artistry meets
@@ -71,7 +71,7 @@ const Project = () => {
           }}
         />
       </div>
-      <div className="project-img">
+      <div className="project-webpage-img">
         <img src="https://source.unsplash.com/random" alt="" />
       </div>
     </div>,
