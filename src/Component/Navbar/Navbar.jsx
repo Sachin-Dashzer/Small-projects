@@ -1,8 +1,9 @@
 
 
 import React from "react";
-import { useState } from "react";
+import { useState , useEffect , useRef } from "react";
 import "./navbar.css";
+
 
 
 import {FaHome} from 'react-icons/fa'
@@ -20,8 +21,6 @@ import {CgUserlane} from 'react-icons/cg'
 const Navbar = () => {
 
   const [currentactive, setcurrentactive] = useState("#")
-
-
   return (
     <div className="navbar">
 

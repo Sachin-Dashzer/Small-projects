@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    
 }
 
 .header-box-text{
@@ -70,9 +71,10 @@
 
 .header-scroller{
     position: absolute;
-    right: 0;
+    right: 0em;
     top: 20em;
     transform: rotate(90deg);
+    /* opacity: 0; */
 
 }
 
@@ -97,6 +99,13 @@
 
 }
 
+.effectbox{
+
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    
+}
 
 
  
@@ -107,6 +116,10 @@
         font-size: 15px;
         margin: 0 1em;
         
+    }
+
+    .header-box-img{
+        height: 32em;
     }
    
     .header-box-img img{
@@ -132,8 +145,11 @@
     }
     
     .header-box-img{
-        height: 20em;
+        height: 22em;
 
+    }
+    .header-box-img img{
+        transform: translateY(-6em);
     }
 
     
@@ -143,5 +159,8 @@
 
     .header-box-text h1{
         font-size: 2em;
+    }
+    .header-box-text h4{
+        font-size: 1.2em;
     }
 }

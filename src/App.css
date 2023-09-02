@@ -105,6 +105,7 @@ section>h2::after{
   color: var(--secondary);
   background-color: var(--text);
   border-color: transparent;
+  box-shadow: 0 0 16px 2px white;
 }
 /* 
 img{

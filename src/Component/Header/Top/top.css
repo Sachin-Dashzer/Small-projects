@@ -5,20 +5,20 @@
   height: 7rem;
   font-size: 16px;
   padding: 0 5rem;
-  /* margin-bottom: 3rem; */
-
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 #top h3 {
-  /* transform: translateX(50%); */
   font-size: 2em;
   margin: 0 auto;
   font-family: "Sedgwick Ave Display", cursive;
   position: relative;
   text-shadow: 4px 4px 6px rgb(32, 32, 255);
+  /* transition: var(--transition); */
+  /* opacity: 0;
+  transform: translateY(-2em); */
 }
 
 #top h3::after {
@@ -57,16 +57,15 @@
   left: 0;
 
   width: 100%;
-  min-height: 10em;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: black;
-  padding: 2em;
-  padding-bottom: 3em;
   box-shadow: 0 0 15px 10px var(--accent) inset;
+  padding: 2em;
+  opacity: 0;
   z-index: 99;
-  transition: var(--transition);
 }
 .menu-links a {
   color: var(--text);
@@ -114,7 +113,7 @@
     height: 6em;
     font-size: 12px;
     padding: 3em;
-    margin-bottom: 5em;
+    margin-bottom: 3em;
   }
 
   #top h3 {
