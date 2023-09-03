@@ -1,6 +1,14 @@
 import React from 'react'
+import {useEffect , useRef} from 'react'
+import {gsap} from 'gsap'
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
+
+
+import "./skills.css"
 import './skills.css'
 import Language from './Language'
+
 
 import {RiArrowDropDownLine} from 'react-icons/ri'
 
@@ -8,8 +16,36 @@ import {RiArrowDropDownLine} from 'react-icons/ri'
 
 
 const Skills = () => {
+
+  let anime = useRef(null);
+
+  useEffect(() => {
+
+    gsap.fromTo(anime , {css : {opacity : 0 , transform : 'translateY(2em)'}} , {
+
+      css : {
+        transform : 'translateY(0em)',
+        opacity : 1,
+
+       
+      },
+      duration : 1,
+      
+      scrollTrigger : {
+        trigger : anime,
+        start : 'top 70%',
+      }
+
+    })
+
+  } , [])
+
+
+
+
+
   return (
-    <section id='skills'>
+    <section id='skills' ref={el => (anime = el)}>
 
       <h5>What makes me better</h5>
       <h2>My Qualities</h2>

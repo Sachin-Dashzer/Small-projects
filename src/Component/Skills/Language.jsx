@@ -11,7 +11,7 @@ const Language = (promps) => {
 
         <h3>{promps.data}</h3>
 
-        <h4 style={{color : "var(--accent)"}}>{promps.level}%</h4>
+        <h4 style={{color : "var(--text)"}}>{promps.level}%</h4>
 
 
     </div>

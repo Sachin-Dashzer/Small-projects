@@ -18,7 +18,7 @@ const Header = () => {
     const tl = new Gsap.timeline();
 
     tl.fromTo(headerBox, {css : {opacity : 0 , transform : "translateY(2em)"}} , { css : {opacity : 1 , transform : "translateY(0)"}, duration: 1 ,delay : 1.5 ,  stagger : 0.5 });
-    tl.fromTo(headerBoxText ,{ css : {opacity : 0 , transform : 'translateY(100%)'}} ,{ css : {opacity : 1 , transform : "translateY(0)"}, duration: 1 ,  stagger : 0.5 });
+    tl.fromTo(headerBoxText ,{ css : {opacity : 0 , transform : 'translateY(100%)'}} ,{ css : {opacity : 1 , transform : "translateY(0)"}, duration: 1 , delay : -0.3 ,  stagger : 0.5 });
     tl.fromTo(headerBoxImg, {css : {opacity : 0 , transform : "translateX(3em)"}} , { css : {opacity : 1 , transform : "translateX(0)"}, duration: 1.5 , delay : -0.5});
   }, []);
 

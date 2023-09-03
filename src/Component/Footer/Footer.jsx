@@ -1,18 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { useRef, useEffect } from "react";
+import emailjs from "emailjs-com";
+import "./footer.css";
+import Ending from "./Ending/Ending.jsx";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 import { BsWhatsapp } from "react-icons/bs";
 import { BsFillEnvelopeAtFill } from "react-icons/bs";
 
-import "./footer.css";
 
-import { useRef } from "react";
-import emailjs from "emailjs-com";
-
-import Ending from "./Ending/Ending.jsx";
 
 const Footer = () => {
   const form = useRef();
+  let anime = useRef(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -34,9 +37,28 @@ const Footer = () => {
       );
   };
 
+  useEffect(() => {
+    gsap.fromTo(
+      anime,
+      { css: { opacity: 0, transform: "translateY(2em)" } },
+      {
+        css: {
+          transform: "translateY(0em)",
+          opacity: 1,
+        },
+        duration: 1,
+
+        scrollTrigger: {
+          trigger: anime,
+          start: "top 70%",
+        },
+      }
+    );
+  }, []);
+
   return (
     <>
-      <section id="footer">
+      <section id="footer" ref={el => (anime = el)}>
         <h5>let's talk about me</h5>
         <h2>Contact me</h2>
 
@@ -85,7 +107,6 @@ const Footer = () => {
       </section>
 
       <Ending />
-
     </>
   );
 };

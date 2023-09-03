@@ -1,27 +1,51 @@
 import React from "react";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 import "./about.css";
-import Mineimg from '../../Images/portfolio1 (1).png'
+import Mineimg from "../../Images/portfolio1 (1).png";
 
 import { PiCertificateFill } from "react-icons/pi";
 import { FaUserGraduate } from "react-icons/fa";
 import { BsFillFolderSymlinkFill } from "react-icons/bs";
 
 const About = () => {
+  let anime = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      anime,
+      { css: { opacity: 0, transform: "translateY(2em)" } },
+      {
+        css: {
+          transform: "translateY(0em)",
+          opacity: 1,
+        },
+        duration: 1,
+
+        scrollTrigger: {
+          trigger: anime,
+          start: "top 70%",
+        },
+      }
+    );
+  }, []);
+
   return (
-    <section id="about">
+    <section id="about" ref={(el) => (anime = el)}>
       <h5>Get to know</h5>
       <h2>About me</h2>
-      
+
       <div className="about-box">
         <div className="about-box-img">
           <img src={Mineimg} alt="" />
         </div>
         <div className="about-box-text">
-          
           <h6 style={{ fontSize: "1.5rem" }}>Hey there!</h6>
           <p>
-            I'm
-            Sachin kumar, an enthusiastic frontend web developer and current
+            I'm Sachin kumar, an enthusiastic frontend web developer and current
             undergraduate. As a fresher, I'm excited about crafting beautiful
             and user-friendly websites that bring ideas to life. What truly
             fuels my passion is the ability to blend creativity with technology,
@@ -29,7 +53,9 @@ const About = () => {
             web an engaging and visually appealing space for everyone!
           </p>
 
-          <a href="#footer" className="btn">Let's talk</a>
+          <a href="#footer" className="btn">
+            Let's talk
+          </a>
 
           <div className="about-box-text-container">
             <div>
@@ -56,7 +82,6 @@ const About = () => {
               <p>15+ completed</p>
             </div>
           </div>
-
         </div>
       </div>
     </section>

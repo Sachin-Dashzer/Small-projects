@@ -21,7 +21,6 @@ body{
   width: 100%;
   background: var(--background);
   color: var(--text);
-  /* line-height: 1.7rem; */
 }
 
 ::-webkit-scrollbar{
@@ -33,8 +32,19 @@ a{
   text-decoration: none;
   color: var(--text);
   cursor: pointer;
-  /* transition: var(--transition); */
 }
+
+.hovercircle{
+  width: 1em;
+  height: 1em;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+}
+
+
 
 
 /* //////////////// simple styles /////// */
@@ -107,11 +117,8 @@ section>h2::after{
   border-color: transparent;
   box-shadow: 0 0 16px 2px white;
 }
-/* 
-img{
-  width: 100%;
-  object-fit: cover; */
-/* }  */
+
+
 
 
 
@@ -131,6 +138,9 @@ img{
 
     }
 }
+
+
+
 
 
 /* ///////////// media query for small ///////////// */

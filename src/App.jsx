@@ -1,7 +1,9 @@
 
 import React from 'react'
+
 import ReactDOM from 'react-dom/client'
 import {Navbar , Header , Footer, Skills, Projects , About } from "./Component/Index.js";
+
 
 
 import "./App.css"
@@ -13,6 +15,8 @@ import "./Styles/Mine.css"
 
 function App() {
 
+
+
   return (
     <>
 
@@ -22,6 +26,7 @@ function App() {
         <Navbar />
 
         <Header />
+
 
         <About />
 
