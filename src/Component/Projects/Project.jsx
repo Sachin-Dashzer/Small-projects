@@ -1,11 +1,8 @@
-import React from "react";
-import { useRef , useEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useRef, useEffect } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-import ReactDOM from "react-dom/client";
 import "./project.css";
-import { BiRightArrowAlt } from "react-icons/bi";
 import Giftshop from "../../Images/giftshop.png";
 import Woodcraft from "../../Images/woodcraft.png";
 
@@ -47,13 +44,13 @@ const Project = () => {
         <a href="https://sachin-dashzer.github.io/woodcraft/" target="blank">
           Visit site
         </a>{" "}
-        <BiRightArrowAlt
+        <i
+          className="fa-solid fa-arrow-right-long"
           style={{
-            fontSize: "1.2em",
-            color: "var(--accent)",
-            transform: "translateY(0.2em)",
+            fontSize: "1em",
+            marginLeft: "0.3em",
           }}
-        />
+        ></i>
       </div>
       <div className="project-webpage-img">
         <img src={Woodcraft} alt="" />
@@ -74,15 +71,15 @@ const Project = () => {
         >
           Visit site
         </a>{" "}
-        <BiRightArrowAlt
+        <i
+          className="fa-solid fa-arrow-right-long"
           style={{
-            fontSize: "1.2em",
-            color: "var(--accent)",
-            transform: "translateY(0.2em)",
+            fontSize: "1em",
+            marginLeft: "0.3em",
           }}
-        />
+        ></i>
       </div>
-      <div className="project-webpage-img" style={{backgroundColor : 'aqua'}}>
+      <div className="project-webpage-img" style={{ backgroundColor: "aqua" }}>
         <img src={Giftshop} alt="" />
       </div>
     </div>,

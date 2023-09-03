@@ -1,15 +1,10 @@
-import React from "react";
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 import "./about.css";
 import Mineimg from "../../Images/portfolio1 (1).png";
-
-import { PiCertificateFill } from "react-icons/pi";
-import { FaUserGraduate } from "react-icons/fa";
-import { BsFillFolderSymlinkFill } from "react-icons/bs";
 
 const About = () => {
   let anime = useRef(null);
@@ -60,7 +55,7 @@ const About = () => {
           <div className="about-box-text-container">
             <div>
               <h3>
-                <PiCertificateFill />
+                <i className="fa-solid fa-award"></i>{" "}
               </h3>
 
               <h4>Experience</h4>
@@ -68,7 +63,7 @@ const About = () => {
             </div>
             <div>
               <h3>
-                <FaUserGraduate />
+                <i className="fa-solid fa-graduation-cap"></i>
               </h3>
 
               <h4>Education</h4>
@@ -76,7 +71,7 @@ const About = () => {
             </div>
             <div>
               <h3>
-                <BsFillFolderSymlinkFill />
+                <i className="fa-solid fa-file-circle-check"></i>{" "}
               </h3>
               <h4>Projects</h4>
               <p>15+ completed</p>

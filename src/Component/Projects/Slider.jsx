@@ -1,7 +1,4 @@
-import React, { useEffect } from "react";
-import { GrNext } from "react-icons/gr";
-import { GrPrevious } from "react-icons/gr";
-import { useState } from "react";
+import React, { useEffect , useState } from "react";
 
 const Slider = ({ content }) => {
   const [currentindex, setCurrentIndex] = useState(0);
@@ -21,9 +18,8 @@ const Slider = ({ content }) => {
   return (
     <div className="project-box">
       <div className="project-box-container">{content[currentindex]};</div>
-
-      <GrPrevious id="prev" onClick={prevdev} />
-      <GrNext id="next" onClick={nextdev} />
+      <i className="fa-solid fa-angle-left" id="prev" onClick={prevdev}></i>
+      <i className="fa-solid fa-angle-right" id="next" onClick={nextdev}></i>
     </div>
   );
 };

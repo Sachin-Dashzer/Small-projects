@@ -1,7 +1,4 @@
-"use client";
-
-import React from "react";
-import { useEffect} from "react";
+import React ,{ useEffect} from "react";
 import "./header.css";
 import Top from "./Top/Top.jsx";
 import Gsap from "gsap";

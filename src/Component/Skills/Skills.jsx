@@ -1,7 +1,6 @@
-import React from 'react'
-import {useEffect , useRef} from 'react'
-import {gsap} from 'gsap'
-import {ScrollTrigger} from 'gsap/ScrollTrigger'
+import React ,{useEffect , useRef} from 'react'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 
@@ -9,8 +8,6 @@ import "./skills.css"
 import './skills.css'
 import Language from './Language'
 
-
-import {RiArrowDropDownLine} from 'react-icons/ri'
 
 
 
@@ -73,21 +70,21 @@ const Skills = () => {
             <h3>Services section</h3>
 
              <details>
-              <summary><h3>Frontend webdevelopment</h3> <RiArrowDropDownLine style={{fontSize : "2rem"}} /> </summary>
+              <summary><h3>Frontend webdevelopment</h3> <i className="fa-solid fa-caret-down"  style={{fontSize : "1rem"}}  ></i> </summary>
               <p>I build responsive websites using HTML5, CSS3, Javascript, React.js, Vite.js, Jquery, and GSAP. I also use SCSS and Vanilla CSS for styling.</p>
              </details>
 
 
 
              <details>
-              <summary><h3>responsive designs</h3> <RiArrowDropDownLine style={{fontSize : "2rem"}} /> </summary>
+              <summary><h3>responsive designs</h3> <i className="fa-solid fa-caret-down"  style={{fontSize : "1rem"}}  ></i> </summary>
               <p>I use responsive design techniques such as Flexbox, Grid, and CSS Animations.</p>
              </details>
 
 
 
              <details>
-              <summary><h3>content writer</h3> <RiArrowDropDownLine style={{fontSize : "2rem"}} /> </summary>
+              <summary><h3>content writer</h3> <i className="fa-solid fa-caret-down"  style={{fontSize : "1rem"}}  ></i> </summary>
               <p>I write articles and blogs about web development and design.</p>
              </details>
              

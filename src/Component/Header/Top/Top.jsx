@@ -1,10 +1,8 @@
 import "./top.css";
 
-import { IoMenu } from "react-icons/io5";
-import { useState , useEffect } from "react";
+import React ,{ useState , useEffect } from "react";
 import Gsap from "gsap";
 
-import {MdOutlineCancel} from 'react-icons/md'
 
 const Top = () => {
   const [pages, setpages] = useState(false);
@@ -36,12 +34,11 @@ const Top = () => {
         <h3 className="title">Dashzer portfolio</h3>
 
         <div className="menu">
-          <IoMenu
-            className="menu-icon"
-            onClick={function () {
+
+        <i className="fa-solid fa-bars" id="menu-icon"  onClick={function () {
               setpages(true);
-            }}
-          />
+            }}></i>
+          
         </div>
       </div>
 
@@ -63,7 +60,9 @@ const Top = () => {
           Contact me
         </a>
 
-          <MdOutlineCancel className="cancel" onClick={() => setpages(false)}/>
+
+        <i className="fa-solid fa-xmark cancel" onClick={() => setpages(false)}></i>
+
         
       </div>
     </>
