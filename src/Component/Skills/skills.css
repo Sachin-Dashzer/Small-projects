@@ -14,11 +14,11 @@
 }
 
 .qualities-box > div {
-  width: 35vw;
+  width: 33vw;
   min-height: 30vh;
   background-color: var(--secondary);
   border-radius: 2rem;
-  padding: 3em;
+  padding: 2em;
   transition: var(--transition);
   transform: scale(0.95);
 }
@@ -26,7 +26,7 @@
 .qualities-box > div:hover{
 
   border: 1px solid var(--primary);
-  transform: scale(1.01);
+  transform: scale(1);
   background-color: transparent;
 }
 
@@ -52,26 +52,23 @@
     transform-origin: bottom right;
     transition: transform 0.4s ease-in-out; */
 }
-/* 
-.qualities-box>div>h3:hover::after{
 
-    transform: scaleX(1);
-    transform-origin: bottom left;
 
-} */
-
-.languages {
-  width: 20em;
-  /* background-color: var(--secondary); */
+.languages-box {
+  width: fit-content;
   margin: 1em 1em;
   padding: 0 2px;
+
+  width: 20em;
+  /* background-color: var(--secondary); */
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--accent);
 }
 
-.languages h3 {
+.languages-box h3,h4 {
   text-transform: uppercase;
+  font-size: 1em;
 }
 
 
@@ -79,7 +76,7 @@
 .qualities-services details {
   width: 80%;
   margin: 0.5em 1em;
-  margin-bottom: 1.5em;
+  margin-bottom: 2.5em;
 
   cursor: pointer;
   border-bottom: 1px solid var(--primary);
@@ -109,7 +106,7 @@
     .qualities-box{
       margin: 0;
     }
-    .languages{
+    .languages-box{
       margin: 1em 2em;
     }
     .qualities-box>div{

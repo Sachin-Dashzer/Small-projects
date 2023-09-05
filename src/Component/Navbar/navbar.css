@@ -2,7 +2,7 @@
     width: 3rem;
     height: 100vh;
     position: fixed;
-    left: 3.5rem;
+    left: 3rem;
     top: 1.5em;
     z-index: 2;
   }
@@ -52,7 +52,7 @@
   
   .active {
     background: var(--text);
-    color: var(--primary);
+    color: var(--background);
     border-radius: 50%;
   }
   

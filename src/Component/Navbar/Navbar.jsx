@@ -4,11 +4,6 @@ import React , { useState , useEffect , useRef } from "react";
 import "./navbar.css";
 
 
-
-import {CgUserlane} from 'react-icons/cg'
-
-
-
 const Navbar = () => {
 
   const [currentactive, setcurrentactive] = useState("#")
@@ -19,7 +14,7 @@ const Navbar = () => {
       <div className="navbar-box">
 
         <div className="navbar-logo">
-            <h1> <a href="#" style={{color : "#c01bee"}}><CgUserlane /></a></h1>  
+            <h1 style={{fontSize : '2.5em' , marginBottom : '2em'}}> <a href="#" style={{color : "var(--accent)"}}><i className="fa-solid fa-robot"></i></a></h1>  
         </div>
         
         <div className="navbar-pages">
@@ -34,7 +29,7 @@ const Navbar = () => {
         <div className="navbar-social-links lastline">
             <a href="https://www.linkedin.com/in/sachin-kumar-48a21322a/" target="blank"><i className="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/Sachin-Dashzer" target="blank"><i className="fa-brands fa-github"></i></a>
-            <a href="https://twitter.com/Sachin_Dashzer" ><i className="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://twitter.com/Sachin_Dashzer" target="blank" ><i className="fa-brands fa-square-x-twitter"></i></a>
         </div>
 
       </div>

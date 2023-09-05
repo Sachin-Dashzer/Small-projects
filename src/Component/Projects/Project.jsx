@@ -1,4 +1,7 @@
 import React, { useRef, useEffect } from "react";
+
+
+
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -14,13 +17,13 @@ const Project = () => {
   useEffect(() => {
     gsap.fromTo(
       anime,
-      { css: { opacity: 0, transform: "translateY(2em)" } },
+      { css: { opacity: 0, transform: "translateY(4em)" } },
       {
         css: {
           transform: "translateY(0em)",
           opacity: 1,
         },
-        duration: 1,
+        duration: 1.5,
 
         scrollTrigger: {
           trigger: anime,
@@ -52,7 +55,7 @@ const Project = () => {
           }}
         ></i>
       </div>
-      <div className="project-webpage-img">
+      <div className="project-webpage-img" style={{ backgroundColor: "black" }}>
         <img src={Woodcraft} alt="" />
       </div>
     </div>,

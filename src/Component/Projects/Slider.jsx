@@ -1,4 +1,5 @@
-import React, { useEffect , useState } from "react";
+import React, { useEffect , useState , useRef } from "react";
+import { gsap } from "gsap";
 
 const Slider = ({ content }) => {
   const [currentindex, setCurrentIndex] = useState(0);
@@ -14,6 +15,24 @@ const Slider = ({ content }) => {
       prevIndex === content.length - 1 ? 0 : prevIndex + 1
     );
   };
+
+
+
+
+  useEffect(() => {
+    let slides = document.querySelector(".project-box-container");
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % content.length);
+
+      gsap.fromTo(slides, {css : {opacity : 0 , transform : 'translateX(2em)'}} , {css : {opacity : 1 , transform : "translateX(0em)" } ,duration : 1})
+
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  
  
   return (
     <div className="project-box">

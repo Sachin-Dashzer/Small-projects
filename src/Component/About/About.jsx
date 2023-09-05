@@ -12,13 +12,13 @@ const About = () => {
   useEffect(() => {
     gsap.fromTo(
       anime,
-      { css: { opacity: 0, transform: "translateY(2em)" } },
+      { css: { opacity: 0, transform: "translateY(4em)" } },
       {
         css: {
           transform: "translateY(0em)",
           opacity: 1,
         },
-        duration: 1,
+        duration: 1.5,
 
         scrollTrigger: {
           trigger: anime,

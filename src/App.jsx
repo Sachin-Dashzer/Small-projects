@@ -1,64 +1,57 @@
+import React, { useState, useEffect, useRef, lazy, Suspense } from "react";
 
-import React, { lazy ,Suspense } from 'react'
+import Duck from "./Images/duck.gif";
+import Header from "./Component/Header/Header.jsx";
+import Navbar from "./Component/Navbar/Navbar.jsx";
 
-import ReactDOM from 'react-dom/client'
+const Footer = lazy(() => import("./Component/Footer/Footer.jsx"));
 
-// const {Navbar , Header , Footer, Skills, Projects , About } = lazy(()=> import("./Component/Index"));
+const Skills = lazy(() => import("./Component/Skills/Skills.jsx"));
 
-const Navbar = lazy(()=> import("./Component/Navbar/Navbar.jsx"));
+const Projects = lazy(() => import("./Component/Projects/Project.jsx"));
 
-const Header = lazy(()=> import("./Component/Header/Header.jsx"));
+const About = lazy(() => import("./Component/About/About.jsx"));
 
-const Footer = lazy(()=> import("./Component/Footer/Footer.jsx"));
-
-const Skills = lazy(()=> import("./Component/Skills/Skills.jsx"));
-
-const Projects = lazy(()=> import("./Component/Projects/Project.jsx"));
-
-const About = lazy(()=> import("./Component/About/About.jsx"));
-
-
-
-
-import "./App.css"
-import "./Styles/Mine.css"
-
-
-
-
+import "./App.css";
+import "./Styles/Mine.css";
 
 function App() {
 
+  const [loader, setloader] = useState(true);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setloader(false);
+    }, 3000);
+  }, [setloader]);
 
   return (
     <>
-
-    <Suspense fallback={<div>Loading...</div>}>
-
+      {(loader) ? (
+      <div className="loaderpage">
+        <img src={Duck} alt="" />
+        <h4>please wait ...</h4>
+        <h2> Let's start our journey together </h2>
+      </div>
+      ) : (
       <main>
-
-
         <Navbar />
 
         <Header />
 
+        <Suspense>
+          <About />
 
-        <About />
+          <Skills />
 
-        <Skills />
+          <Projects />
 
-        <Projects />
-
-        <Footer />  
-        
-
+          <Footer />
+        </Suspense>
       </main>
-
-      </Suspense>
-
+      )}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
