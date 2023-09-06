@@ -83,21 +83,18 @@ const Footer = () => {
 
               <div>
                 <input type="submit" value="submit" className="btn" />
-                <h5>
+               
+              </div>
+            </form>
+
+            <div className="contact-box-map">
+            <h5>
                   <i className="fa-brands fa-whatsapp"></i>{" "}
                   <span> +91 8287037611 </span>
                   <br />
                   <i className="fa-solid fa-envelope-circle-check"></i>{" "}
                   <span>sachin8287037611@gmail.com</span>
                 </h5>
-              </div>
-            </form>
-
-            <div className="contact-box-map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5501.025789559383!2d77.0441637763373!3d28.704608594489635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d07b781ebe9ff%3A0x27ec61a9fcb5bcfe!2sBaldev%20International%20School!5e0!3m2!1sen!2sin!4v1692964676410!5m2!1sen!2sin"
-               
-              ></iframe>
             </div>
           </div>
 
