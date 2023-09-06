@@ -68,16 +68,16 @@
 
 .contact-box-map {
   width: 35em;
-  padding-top: 1em;
-  padding-left: 2em;
+ padding: 2em 4em;
   overflow: hidden;
+  background: var(--secondary);
 }
-.contact-box-map div h5{
-  font-size: 1.4em;
-  line-height: 1.6;
+.contact-box-map h5{
+  font-size: 2em;
+  line-height: 3;
 }
 
-.contact-box-map div span{
+.contact-box-map span{
   font-size: 0.7em;
 
   color: var(--text);
