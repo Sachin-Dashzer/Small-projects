@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
 
 
+  
 module: {
   rules: [
     {
@@ -17,5 +18,6 @@ module: {
     },
   ],
 },
+
 
 })
